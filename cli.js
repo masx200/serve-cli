@@ -6,4 +6,3 @@ server.listen(3000).on("listening", () => {
 });
 import http from "http";
 import { app } from "./index.js";
-
