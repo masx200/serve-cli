@@ -1,5 +1,17 @@
 # serve-cli
 
+## Description
+
+A simple zero-configuration command-line static file server based on koa2.
+
+## Installation
+
+#### Globally via yarn
+
+```bash
+yarn global add @masx200/serve-cli
+```
+
 #### Running on-demand:
 
 ```bash
@@ -25,3 +37,9 @@ options:
   --sslCert    Path to ssl cert file [self-signed]
   --help       Print this list and exit
 ```
+
+## TLS/SSL
+
+First, you need to make sure that openssl is installed correctly, and you have `key.pem` and `cert.pem` files.
+
+Then you need to run the server with `--ssl` for enabling SSL and `--sslKey=key.pem --sslCert=cert.pem` for your certificate files.
