@@ -12,6 +12,6 @@
         "koa-static": "^5.0.0",
         "koa2-serve-index": "^2.0.1"
   },
-  "scripts": {
+  "scripts": {    "test": "node index.js"
   }
 }
