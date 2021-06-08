@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import cors from "@koa/cors";
 import http from "http";
 import Koa from "koa";
