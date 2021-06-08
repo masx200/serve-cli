@@ -1,6 +1,5 @@
-#!/usr/bin/env node
 import cors from "@koa/cors";
-import http from "http";
+
 import Koa from "koa";
 import compress from "koa-compress";
 import conditional from "koa-conditional-get";
@@ -22,8 +21,4 @@ app.use(compress({}));
 app.use(servestatic(publicpath, { hidden: true }));
 
 app.use(serveIndex(publicpath, { hidden: true }));
-const server = http.createServer(app.callback());
-
-server.listen(3000).on("listening", () => {
-    console.log(server.address());
-});
+export { app };
