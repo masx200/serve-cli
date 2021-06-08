@@ -8,11 +8,8 @@ import etag from "koa-etag";
 import logger from "koa-logger";
 import servestatic from "koa-static";
 import serveIndex from "koa2-serve-index";
-import path from "path";
-import process from "process";
+import { publicpath } from "./publicpath.js";
 const app = new Koa();
-const publicpath = path.resolve(process.cwd());
-
 app.use(cors({}));
 app.use(logger({}));
 app.use(conditional());
