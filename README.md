@@ -1,3 +1,2 @@
-# node-jsj5ay
+# serve-cli
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/node-jsj5ay)
