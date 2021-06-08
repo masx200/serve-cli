@@ -17,6 +17,7 @@
         "start": "node index.js",
         "format": "prettier --write \"**/*.ts\" **/*.js *.json *.md *.js"
     },
+    "bin": "index.js",
     "main": "index.js",
     "repository": {
         "type": "git",
