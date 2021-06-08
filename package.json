@@ -1,7 +1,7 @@
 {
-    "name": "node-starter",
+    "name": "@masx200/serve-cli",
     "version": "0.0.0",
-    "private": true,
+    "private": false,
     "dependencies": {
         "@koa/cors": "^3.1.0",
         "koa": "^2.13.1",
@@ -16,5 +16,17 @@
     "scripts": {
         "start": "node index.js",
         "format": "prettier --write \"**/*.ts\" **/*.js *.json *.md *.js"
-    }
+    },
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/masx200/serve-cli.git"
+    },
+    "author": "masx200 <masx200@qq.com>",
+    "license": "MIT",
+    "description": "[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/node-jsj5ay)",
+    "bugs": {
+        "url": "https://github.com/masx200/serve-cli/issues"
+    },
+    "homepage": "https://github.com/masx200/serve-cli#readme"
 }
