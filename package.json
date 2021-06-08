@@ -2,7 +2,15 @@
   "name": "node-starter",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {
+  "dependencies": {   "@koa/cors": "^3.1.0",
+        "koa": "^2.13.1",
+        "koa-compress": "^5.0.1",
+        "koa-conditional-get": "^3.0.0",
+        "koa-etag": "^4.0.0",
+    
+        "koa-logger": "^3.2.1",
+        "koa-static": "^5.0.0",
+        "koa2-serve-index": "^2.0.1"
   },
   "scripts": {
   }
