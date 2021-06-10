@@ -1,0 +1,72 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\sckj\AppData\Roaming\npm\pnpm-global\5\node_modules\yarn\bin\yarn.js format
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Siemens\ACE\Bin;C:\Program Files\Common Files\Siemens\Automation\Simatic OAM\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk\jdk1.8.0_102\bin;D:\java\jdk\jdk1.8.0_102\bin;D:\java\apache-maven\apache-maven-3.3.9\bin;D:\java\apache-maven\apache-maven-3.3.9\bin;D:\java\ide\idea\bin;*:\java\ide\idea\bin;D:\download\Git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\MinGW\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\nodejs\;C:\Users\sckj\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\sckj\AppData\Local\Programs\Python\Python39\;C:\Users\sckj\AppData\Local\Microsoft\WindowsApps;D:\download\Vscode\Microsoft VS Code\bin;C:\Users\sckj\AppData\Local\GitHubDesktop\bin;C:\Python27;D:\迅雷下载\BaiduPCS-Go-v3.6.2_trans-windows-x64;C:\Users\sckj\AppData\Local\Yarn\Data\global\node_modules\.bin;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\sckj\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.3.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: D:\Documents\github\serve-cli\package.json: Unexpected token } in JSON at position 642
+      at JSON.parse (<anonymous>)
+      at C:\Users\sckj\AppData\Roaming\npm\pnpm-global\5\node_modules\.pnpm\yarn@1.22.10\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\sckj\AppData\Roaming\npm\pnpm-global\5\node_modules\.pnpm\yarn@1.22.10\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\sckj\AppData\Roaming\npm\pnpm-global\5\node_modules\.pnpm\yarn@1.22.10\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+      "publishConfig": {
+          "registry": "https://registry.npmjs.org/"
+      },
+      "type": "module",
+      "name": "@masx200/serve-cli",
+      "version": "1.0.3",
+      "private": false,
+      "devDependencies": {
+          "prettier": "^2.3.1"
+      },
+      "dependencies": {
+          "@koa/cors": "^3.1.0",
+          "@masx200/koa-stream-etag": "^5.0.1",
+          "koa": "^2.13.1",
+          "koa-compress": "^5.0.1",
+          "koa-conditional-get": "^3.0.0",
+          "koa-etag": "^4.0.0",
+          "koa-logger": "^3.2.1",
+          "koa-range": "^0.3.0",
+          "koa-static": "^5.0.0",
+          "koa2-serve-index": "^2.0.1",
+          "minimist": "^1.2.5",
+      },
+      "scripts": {
+          "start": "node cli.js",
+          "format": "prettier --write \"**/*.ts\" **/*.js *.json *.md *.js"
+      },
+      "bin": "cli.js",
+      "main": "index.js",
+      "repository": {
+          "type": "git",
+          "url": "git+https://github.com/masx200/serve-cli.git"
+      },
+      "author": "masx200 <masx200@qq.com>",
+      "license": "MIT",
+      "description": "",
+      "bugs": {
+          "url": "https://github.com/masx200/serve-cli/issues"
+      },
+      "homepage": "https://github.com/masx200/serve-cli#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
