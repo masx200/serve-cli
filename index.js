@@ -16,8 +16,9 @@ app.use(range);
 app.use(cors({}));
 app.use(logger({}));
 app.use(conditional());
-app.use(streametag({}));
+
 app.use(compress({}));
+app.use(streametag({}));
 app.use(etag({}));
 app.use(servestatic(publicpath, { hidden: true }));
 

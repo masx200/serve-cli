@@ -26,6 +26,8 @@ dependencies:
   koa-static: 5.0.0
   koa2-serve-index: 2.0.1
   minimist: 1.2.5
+
+devDependencies:
   prettier: 2.3.1
 
 packages:
@@ -497,7 +499,7 @@ packages:
     resolution: {integrity: sha512-p+vNbgpLjif/+D+DwAZAbndtRrR0md0MwfmOVN9N+2RgyACMT+7tfaRnT+WDPkqnuVwleyuBIG2XBxKDme3hPA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
-    dev: false
+    dev: true
 
   /resolve-path/1.4.0:
     resolution: {integrity: sha1-xL2p9e+y/OZSR4c6s2u02DT+Fvc=}
