@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@koa/cors': ^3.1.0
+  '@masx200/koa-stream-etag': ^5.0.1
   koa: ^2.13.1
   koa-compress: ^5.0.1
   koa-conditional-get: ^3.0.0
@@ -15,6 +16,7 @@ specifiers:
 
 dependencies:
   '@koa/cors': 3.1.0
+  '@masx200/koa-stream-etag': 5.0.1
   koa: 2.13.1
   koa-compress: 5.0.1
   koa-conditional-get: 3.0.0
@@ -33,6 +35,12 @@ packages:
     engines: {node: '>= 8.0.0'}
     dependencies:
       vary: 1.1.2
+    dev: false
+
+  /@masx200/koa-stream-etag/5.0.1:
+    resolution: {integrity: sha512-v0qOEDSOUHmD5miNa8hrLGdgMz6ZRh2olahaFqwXOVaZGctqp1MK6pEgOzBmVqCmDLep+ORlFEGWK69BQ2yi+g==}
+    dependencies:
+      etag: 1.8.1
     dev: false
 
   /accepts/1.3.7:

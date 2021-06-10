@@ -2,7 +2,7 @@ import cors from "@koa/cors";
 import Koa from "koa";
 import compress from "koa-compress";
 import conditional from "koa-conditional-get";
-import etag from "koa-etag";
+import etag from "@masx200/koa-stream-etag";
 import logger from "koa-logger";
 import range from "koa-range";
 import servestatic from "koa-static";
