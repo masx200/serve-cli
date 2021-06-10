@@ -1,4 +1,7 @@
 {
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
     "type": "module",
     "name": "@masx200/serve-cli",
     "version": "1.0.1",
