@@ -7,6 +7,7 @@ specifiers:
   koa-conditional-get: ^3.0.0
   koa-etag: ^4.0.0
   koa-logger: ^3.2.1
+  koa-range: ^0.3.0
   koa-static: ^5.0.0
   koa2-serve-index: ^2.0.1
   minimist: ^1.2.5
@@ -19,6 +20,7 @@ dependencies:
   koa-conditional-get: 3.0.0
   koa-etag: 4.0.0
   koa-logger: 3.2.1
+  koa-range: 0.3.0
   koa-static: 5.0.0
   koa2-serve-index: 2.0.1
   minimist: 1.2.5
@@ -331,6 +333,13 @@ packages:
       passthrough-counter: 1.0.0
     dev: false
 
+  /koa-range/0.3.0:
+    resolution: {integrity: sha1-NYjjSWRzqDmhvSZNKkKx2FvX/qw=}
+    engines: {node: '>=7'}
+    dependencies:
+      stream-slice: 0.1.2
+    dev: false
+
   /koa-send/5.0.1:
     resolution: {integrity: sha512-tmcyQ/wXXuxpDxyNXv5yNNkdAMdFRqwtegBXUaowiQzUKqJehttS0x2j0eOZDQAyloAth5w6wwBImnFzkUz3pQ==}
     engines: {node: '>= 8'}
@@ -518,6 +527,10 @@ packages:
   /statuses/2.0.1:
     resolution: {integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==}
     engines: {node: '>= 0.8'}
+    dev: false
+
+  /stream-slice/0.1.2:
+    resolution: {integrity: sha1-LcT04bk2+xPz6zmi3vGTJ5jQeks=}
     dev: false
 
   /supports-color/5.5.0:
