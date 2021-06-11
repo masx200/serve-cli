@@ -4,14 +4,14 @@
     },
     "type": "module",
     "name": "@masx200/serve-cli",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "private": false,
     "devDependencies": {
         "prettier": "^2.3.1"
     },
     "dependencies": {
         "@koa/cors": "^3.1.0",
-        "@masx200/koa-stream-etag": "^5.0.1",
+        "@masx200/koa-stream-etag": "^5.0.3",
         "koa": "^2.13.1",
         "koa-compress": "^5.0.1",
         "koa-conditional-get": "^3.0.0",

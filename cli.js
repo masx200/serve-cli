@@ -36,7 +36,7 @@ if (argv.help || argv.h) {
 const config = {
     path: argv.path || process.cwd(),
     host: argv.host || "0.0.0.0",
-    port: Number(argv.port) || 3000,
+    port: Number(argv.port) || 4000,
 
     ssl: Boolean(argv.ssl),
     sslKey: Boolean(argv.ssl)
