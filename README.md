@@ -4,6 +4,8 @@
 
 A simple zero-configuration command-line static file server based on koa2.
 
+支持范围请求，条件请求，内容压缩，跨域访问，添加 etag 头部
+
 ## Installation
 
 #### Globally via yarn
