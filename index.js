@@ -12,6 +12,25 @@ import serveIndex from "koa2-serve-index";
 import { publicpath } from "./publicpath.js";
 
 const app = new Koa();
+app.use(async (ctx, next) => {
+    const { method, url, header } = ctx.request;
+    console.log(">>", method, url, header);
+    return next();
+});
+app.use(async (ctx, next) => {
+    await next();
+    const { status, header } = ctx.response;
+
+    console.log(">>", status, header);
+    return;
+});
+app.use(async (ctx, next) => {
+    await next();
+    if (ctx.method === "HEAD") {
+        ctx.res.end();
+    }
+    return;
+});
 app.use(range);
 app.use(cors({}));
 app.use(logger({}));

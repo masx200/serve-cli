@@ -7,6 +7,7 @@ import process from "process";
 import { fileURLToPath } from "url";
 import { argv } from "./argv.js";
 import { app } from "./index.js";
+import { showhelp } from "./showhelp.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -14,24 +15,7 @@ const selfSignedKey = join(__dirname, "./certs/self-signed.key.pem");
 const selfSignedCert = join(__dirname, "./certs/self-signed.cert.pem");
 console.log("serve-cli");
 if (argv.help || argv.h) {
-    console.log(
-        [
-            "usage: serve-cli [options]",
-            "",
-            "options:",
-            "  --path       Path to folder [process.cwd()]",
-            "  --host       Host to use [0.0.0.0]",
-            "  --port       Port to use [3000]",
-
-            "  --ssl        Enable https [false]",
-            "  --sslKey     Path to ssl key file [self-signed]",
-            "  --sslCert    Path to ssl cert file [self-signed]",
-            "  --help       Print this list and exit",
-
-            "",
-        ].join("\n")
-    );
-    process.exit();
+    showhelp();
 }
 const config = {
     path: argv.path || process.cwd(),
@@ -46,7 +30,13 @@ const config = {
         ? fs.readFileSync(argv.sslCert || selfSignedCert).toString()
         : "",
 };
-console.log(config);
+console.log(
+    Object.fromEntries(
+        Object.entries(config).filter(([key]) => {
+            return !["sslKey", "sslCert"].includes(key);
+        })
+    )
+);
 const serverHandler = app.callback();
 const httpsopt = { cert: config.sslCert, key: config.sslKey };
 const server = config.ssl
