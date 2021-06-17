@@ -13,6 +13,10 @@ import { publicpath } from "./publicpath.js";
 
 const app = new Koa();
 app.use(async (ctx, next) => {
+    ctx.response.set("Access-Control-Allow-Origin", "*");
+    return next();
+});
+app.use(async (ctx, next) => {
     const { method, url, header } = ctx.request;
     console.log(">>", method, url, header);
     return next();
