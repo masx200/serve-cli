@@ -38,7 +38,7 @@ console.log(
     )
 );
 const serverHandler = app.callback();
-const httpsopt = { cert: config.sslCert, key: config.sslKey };
+const httpsopt = { cert: config.sslCert, key: config.sslKey, allowHTTP1: true };
 const server = config.ssl
     ? http2.createSecureServer(httpsopt, serverHandler)
     : http.createServer(serverHandler);
