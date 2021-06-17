@@ -19,9 +19,10 @@ app.use(async (ctx, next) => {
 });
 app.use(async (ctx, next) => {
     await next();
-    const { status, header } = ctx.response;
+    const { method, url } = ctx.request;
+    const { status } = ctx.response;
 
-    console.log(">>", status, header);
+    console.log(">>", method, url, ">", status);
     return;
 });
 app.use(async (ctx, next) => {
