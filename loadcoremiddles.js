@@ -9,7 +9,7 @@ import serveIndex from "koa2-serve-index";
 import { AccessControlAllowOrigin } from "./AccessControlAllowOrigin.js";
 import { headhandler } from "./headhandler.js";
 
-export function loadcoremiddles(app, publicpath) {
+export function loadcoremiddles(app, publicpath,index=true) {
     app.use(AccessControlAllowOrigin());
     // app.use(beforelogger());
     // app.use(afterlogger());
@@ -22,6 +22,7 @@ export function loadcoremiddles(app, publicpath) {
     app.use(compress({}));
     app.use(streametag({}));
     app.use(koaetag({}));
+    if(index){}else{}
     app.use(servestatic(publicpath, { hidden: true }));
 
     app.use(serveIndex(publicpath, { hidden: true }));
