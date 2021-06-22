@@ -4,7 +4,7 @@
     },
     "type": "module",
     "name": "@masx200/serve-cli",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "private": false,
     "devDependencies": {
         "@types/koa": "^2.13.3",
@@ -19,7 +19,6 @@
         "koa-conditional-get": "^3.0.0",
         "koa-etag": "^4.0.0",
         "koa-logger": "^3.2.1",
-       
         "koa-static": "^5.0.0",
         "koa2-serve-index": "^2.0.1",
         "minimist": "^1.2.5"
