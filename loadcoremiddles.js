@@ -22,7 +22,34 @@ export function loadcoremiddles(app, publicpath,index=true) {
     app.use(compress({}));
     app.use(streametag({}));
     app.use(koaetag({}));
-    if(index){}else{}
+    if(index){    app.use(servestatic(publicpath, { hidden: true }));
+    
+        app.use(serveIndex(publicpath, { hidden: true }));
+    app.use(servestatic(publicpath, { hidden: true }));
+
+    app.use(serveIndex(publicpath, { hidden: true }));
+    app.use(servestatic(publicpath, { hidden: true }));
+    
+        app.use(serveIndex(publicpath, { hidden: true }));
+        }else{    app.use(servestatic(publicpath, { hidden: true }));
+        
+            app.use(serveIndex(publicpath, { hidden: true }));
+    app.use(servestatic(publicpath, { hidden: true }));
+
+    app.use(serveIndex(publicpath, { hidden: true }));
+    app.use(servestatic(publicpath, { hidden: true }));
+    
+        app.use(serveIndex(publicpath, { hidden: true }));
+            app.use(servestatic(publicpath, { hidden: true }));
+            
+                app.use(serveIndex(publicpath, { hidden: true }));
+    app.use(servestatic(publicpath, { hidden: true }));
+
+    app.use(serveIndex(publicpath, { hidden: true }));
+    app.use(servestatic(publicpath, { hidden: true }));
+    
+        app.use(serveIndex(publicpath, { hidden: true }));
+        }
     app.use(servestatic(publicpath, { hidden: true }));
 
     app.use(serveIndex(publicpath, { hidden: true }));
