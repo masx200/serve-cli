@@ -9,7 +9,7 @@ import serveIndex from "koa2-serve-index";
 import { AccessControlAllowOrigin } from "./AccessControlAllowOrigin.js";
 import { headhandler } from "./headhandler.js";
 
-export function loadcoremiddles(app, publicpath,index=true) {
+export function loadcoremiddles(app, publicpath, index = true) {
     app.use(AccessControlAllowOrigin());
     // app.use(beforelogger());
     // app.use(afterlogger());
@@ -22,35 +22,14 @@ export function loadcoremiddles(app, publicpath,index=true) {
     app.use(compress({}));
     app.use(streametag({}));
     app.use(koaetag({}));
-    if(index){    app.use(servestatic(publicpath, { hidden: true }));
-    
-        app.use(serveIndex(publicpath, { hidden: true }));
-    app.use(servestatic(publicpath, { hidden: true }));
+    const staticmiddle = servestatic(publicpath, { hidden: true });
+    const indexmiddle = serveIndex(publicpath, { hidden: true });
+    if (index) {
+        app.use(staticmiddle);
 
-    app.use(serveIndex(publicpath, { hidden: true }));
-    app.use(servestatic(publicpath, { hidden: true }));
-    
-        app.use(serveIndex(publicpath, { hidden: true }));
-        }else{    app.use(servestatic(publicpath, { hidden: true }));
-        
-            app.use(serveIndex(publicpath, { hidden: true }));
-    app.use(servestatic(publicpath, { hidden: true }));
-
-    app.use(serveIndex(publicpath, { hidden: true }));
-    app.use(servestatic(publicpath, { hidden: true }));
-    
-        app.use(serveIndex(publicpath, { hidden: true }));
-            app.use(servestatic(publicpath, { hidden: true }));
-            
-                app.use(serveIndex(publicpath, { hidden: true }));
-    app.use(servestatic(publicpath, { hidden: true }));
-
-    app.use(serveIndex(publicpath, { hidden: true }));
-    app.use(servestatic(publicpath, { hidden: true }));
-    
-        app.use(serveIndex(publicpath, { hidden: true }));
-        }
-    app.use(servestatic(publicpath, { hidden: true }));
-
-    app.use(serveIndex(publicpath, { hidden: true }));
+        app.use(indexmiddle);
+    } else {
+        app.use(indexmiddle);
+        app.use(staticmiddle);
+    }
 }
