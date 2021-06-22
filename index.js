@@ -5,7 +5,7 @@ import conditional from "koa-conditional-get";
 import streametag from "@masx200/koa-stream-etag";
 import koaetag from "koa-etag";
 import logger from "koa-logger";
-import range from "koa-range";
+import range from "@masx200/koa-range";
 import servestatic from "koa-static";
 
 import serveIndex from "koa2-serve-index";
