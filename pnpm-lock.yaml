@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@koa/cors': ^3.1.0
-  '@masx200/koa-range': 1.0.1
+  '@masx200/koa-range': 1.0.2
   '@masx200/koa-stream-etag': ^5.0.3
   '@types/koa': ^2.13.3
   koa: ^2.13.1
@@ -10,7 +10,6 @@ specifiers:
   koa-conditional-get: ^3.0.0
   koa-etag: ^4.0.0
   koa-logger: ^3.2.1
-  koa-range: ^0.3.0
   koa-static: ^5.0.0
   koa2-serve-index: ^2.0.1
   minimist: ^1.2.5
@@ -18,14 +17,13 @@ specifiers:
 
 dependencies:
   '@koa/cors': 3.1.0
-  '@masx200/koa-range': 1.0.1
+  '@masx200/koa-range': 1.0.2
   '@masx200/koa-stream-etag': 5.0.3
   koa: 2.13.1
   koa-compress: 5.0.1
   koa-conditional-get: 3.0.0
   koa-etag: 4.0.0
   koa-logger: 3.2.1
-  koa-range: 0.3.0
   koa-static: 5.0.0
   koa2-serve-index: 2.0.1
   minimist: 1.2.5
@@ -43,8 +41,8 @@ packages:
       vary: 1.1.2
     dev: false
 
-  /@masx200/koa-range/1.0.1:
-    resolution: {integrity: sha512-6Pu1cA8JvfBc8q7H4mpLgJjUyi6Mo+s6LXhceFLGRTsVU22QmFbGpShSYVBTeUg98/c70YWONfHjUc1Ory2hnQ==}
+  /@masx200/koa-range/1.0.2:
+    resolution: {integrity: sha512-HSsihAQ8cb1RYfnw3vQyEGOmCN1egmAmZdCJJWtCWDkK+q1vRjMq/E1b+o/bPR2xWJYluae2uAkOTOqdqu6R7A==}
     engines: {node: '>=7'}
     dependencies:
       stream-slice: 0.1.2
@@ -455,13 +453,6 @@ packages:
       chalk: 2.4.2
       humanize-number: 0.0.2
       passthrough-counter: 1.0.0
-    dev: false
-
-  /koa-range/0.3.0:
-    resolution: {integrity: sha1-NYjjSWRzqDmhvSZNKkKx2FvX/qw=}
-    engines: {node: '>=7'}
-    dependencies:
-      stream-slice: 0.1.2
     dev: false
 
   /koa-send/5.0.1:
