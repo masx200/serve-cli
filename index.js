@@ -3,7 +3,7 @@ import Koa from "koa";
 import compress from "koa-compress";
 import conditional from "koa-conditional-get";
 import streametag from "@masx200/koa-stream-etag";
-import etag from "koa-etag";
+import koaetag from "koa-etag";
 import logger from "koa-logger";
 import range from "koa-range";
 import servestatic from "koa-static";
@@ -43,7 +43,7 @@ app.use(conditional());
 
 app.use(compress({}));
 app.use(streametag({}));
-app.use(etag({}));
+app.use(koaetag({}));
 app.use(servestatic(publicpath, { hidden: true }));
 
 app.use(serveIndex(publicpath, { hidden: true }));
