@@ -6,7 +6,7 @@ import { publicpath } from "./publicpath.js";
 const app = new Koa();
 
 loadloggermiddles(app);
-loadcoremiddles(app, publicpath,true);
+loadcoremiddles(app, publicpath, true);
 
 export { loadcoremiddles, loadloggermiddles };
 
