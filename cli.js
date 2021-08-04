@@ -18,15 +18,15 @@ if (argv.help || argv.h) {
     showhelp();
 }
 const config = {
-    path: argv.path || process.cwd(),
-    host: argv.host || "0.0.0.0",
-    port: Number(argv.port) || 4000,
+    path: argv.path || argv.p || process.cwd(),
+    host: argv.host || argv.h || "0.0.0.0",
+    port: Number(argv.port || argv.p) || 4000,
 
-    ssl: Boolean(argv.ssl),
-    sslKey: Boolean(argv.ssl)
+    ssl: Boolean(argv.ssl || argv.s),
+    sslKey: Boolean(argv.ssl || argv.s)
         ? fs.readFileSync(argv.sslKey || selfSignedKey).toString()
         : "",
-    sslCert: Boolean(argv.ssl)
+    sslCert: Boolean(argv.ssl || argv.s)
         ? fs.readFileSync(argv.sslCert || selfSignedCert).toString()
         : "",
 };

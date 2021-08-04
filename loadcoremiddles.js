@@ -22,7 +22,10 @@ export function loadcoremiddles(app, publicpath, index = true) {
     app.use(compress({}));
     app.use(streametag({}));
     app.use(koaetag({}));
-    const staticmiddle = servestatic(publicpath, { hidden: true });
+    const staticmiddle = servestatic(publicpath, {
+        hidden: true,
+        extensions: ["html"],
+    });
     const indexmiddle = serveIndex(publicpath, { hidden: true });
     if (index) {
         app.use(staticmiddle);
