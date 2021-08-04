@@ -6,9 +6,9 @@ export function showhelp() {
             "usage: serve-cli [options]",
             "",
             "options:",
-            "  --path,-p       Path to folder [process.cwd()]",
+            "  --path,-pa       Path to folder [process.cwd()]",
             "  --host,-h       Host to use [0.0.0.0]",
-            "  --port,-p       Port to use [3000]",
+            "  --port,-po       Port to use [3000]",
 
             "  --ssl,-s        Enable https [false]",
             "  --sslKey     Path to ssl key file [self-signed]",

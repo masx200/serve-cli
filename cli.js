@@ -18,9 +18,9 @@ if (argv.help || argv.h) {
     showhelp();
 }
 const config = {
-    path: argv.path || argv.p || process.cwd(),
+    path: argv.path || argv.pa || process.cwd(),
     host: argv.host || argv.h || "0.0.0.0",
-    port: Number(argv.port || argv.p) || 4000,
+    port: Number(argv.port || argv.po) || 4000,
 
     ssl: Boolean(argv.ssl || argv.s),
     sslKey: Boolean(argv.ssl || argv.s)

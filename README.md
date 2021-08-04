@@ -31,9 +31,9 @@ serve-cli
 usage: serve-cli [options]
 
 options:
-  --path,-p       Path to folder [process.cwd()]
+  --path,-pa       Path to folder [process.cwd()]
   --host,-h       Host to use [0.0.0.0]
-  --port,-p       Port to use [4000]
+  --port,-po       Port to use [4000]
   --ssl,-s        Enable https [false]
   --sslKey     Path to ssl key file [self-signed]
   --sslCert    Path to ssl cert file [self-signed]
