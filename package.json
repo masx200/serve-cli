@@ -26,7 +26,7 @@
     },
     "scripts": {
         "start": "node cli.js",
-        "format": "prettier --write \"**/*.ts\" **/*.js *.json *.md *.js"
+        "format": "npx prettier --write \"**/*.ts\" **/*.js *.json *.md *.js"
     },
     "bin": "cli.js",
     "main": "index.js",
@@ -40,5 +40,8 @@
     "bugs": {
         "url": "https://github.com/masx200/serve-cli/issues"
     },
-    "homepage": "https://github.com/masx200/serve-cli#readme"
+    "homepage": "https://github.com/masx200/serve-cli#readme",
+    "resolutions": {
+        "debug": "4.3.2"
+    }
 }
