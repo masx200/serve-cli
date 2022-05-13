@@ -8,14 +8,15 @@
     "version": "1.2.0",
     "devDependencies": {
         "@types/koa": "^2.13.3",
-        "prettier": "^2.3.1"
+        "prettier": "^2.6.2",
+        "typescript": "^4.6.4"
     },
     "dependencies": {
-        "@koa/cors": "^3.1.0",
+        "@koa/cors": "^3.3.0",
         "@masx200/koa-range": "^1.0.5",
         "@masx200/koa-stream-etag": "^5.0.6",
-        "koa": "^2.13.1",
-        "koa-compress": "^5.0.1",
+        "koa": "^2.13.4",
+        "koa-compress": "^5.1.0",
         "koa-conditional-get": "^3.0.0",
         "koa-etag": "^4.0.0",
         "koa-logger": "^3.2.1",
