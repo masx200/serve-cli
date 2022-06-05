@@ -14,7 +14,7 @@
     "dependencies": {
         "@koa/cors": "^3.3.0",
         "@masx200/koa-range": "^1.0.5",
-        "@masx200/koa-stream-etag": "^5.0.7",
+        "@masx200/koa-stream-etag": "^5.0.8",
         "koa": "^2.13.4",
         "koa-compress": "^5.1.0",
         "koa-conditional-get": "^3.0.0",
