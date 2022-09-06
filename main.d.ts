@@ -12,4 +12,4 @@ export interface ServeOptions {
 }
 export declare function main(
     argv: Partial<ParsedArgs & ServeOptions>
-): http.Server | http2.Http2SecureServer;
+): Promise<http.Server | http2.Http2SecureServer>;

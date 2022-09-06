@@ -5,7 +5,7 @@ import process from "process";
 import { createApp } from "./app.js";
 import { showhelp } from "./showhelp.js";
 import { selfSignedKey, selfSignedCert } from "./selfSignedKey.js";
-export function main(argv) {
+export async function main(argv) {
     console.log("serve-cli");
     if (argv.help || argv.h) {
         showhelp();
@@ -67,6 +67,12 @@ export function main(argv) {
     ];
     console.log(logs.join("\n"));
     run();
+    await new Promise((r, j) => {
+        server.on("listening", () => {
+            r();
+        });
+        server.on("error", j);
+    });
     return server;
 }
 //# sourceMappingURL=main.js.map

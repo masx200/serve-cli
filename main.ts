@@ -14,7 +14,7 @@ export interface ServeOptions {
     sslKey: string;
     sslCert: string;
 }
-export function main(argv: Partial<ParsedArgs & ServeOptions>) {
+export async function main(argv: Partial<ParsedArgs & ServeOptions>) {
     console.log("serve-cli");
     if (argv.help || argv.h) {
         showhelp();
@@ -81,5 +81,12 @@ export function main(argv: Partial<ParsedArgs & ServeOptions>) {
 
     console.log(logs.join("\n"));
     run();
+    await new Promise<void>((r, j) => {
+        server.on("listening", () => {
+            r();
+        });
+        server.on("error", j);
+    });
+
     return server;
 }
