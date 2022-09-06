@@ -1,4 +1,4 @@
-export function headhandler() {
+export function headhandler(): Koa.Middleware {
     return async (ctx, next) => {
         await next();
         if (ctx.method === "HEAD") {
@@ -7,4 +7,4 @@ export function headhandler() {
         return;
     };
 }
-//# sourceMappingURL=headhandler.js.map
+import Koa from "koa";

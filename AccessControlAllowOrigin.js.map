@@ -1,0 +1,1 @@
+{"version":3,"file":"AccessControlAllowOrigin.js","sourceRoot":"","sources":["AccessControlAllowOrigin.ts"],"names":[],"mappings":"AAEA,MAAM,UAAU,wBAAwB;IACpC,OAAO,KAAK,EAAE,GAAG,EAAE,IAAI,EAAE,EAAE;QACvB,GAAG,CAAC,QAAQ,CAAC,GAAG,CAAC,6BAA6B,EAAE,GAAG,CAAC,CAAC;QACrD,OAAO,IAAI,EAAE,CAAC;IAClB,CAAC,CAAC;AACN,CAAC"}
