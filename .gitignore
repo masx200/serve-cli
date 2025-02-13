@@ -6,3 +6,4 @@ package-lock.json
 *.gz
 yarn.lock
 checks.json
+pnpm-lock.yaml
